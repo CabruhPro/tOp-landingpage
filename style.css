@@ -1,25 +1,135 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     display: flex;
     flex-flow: row nowrap;
-
+    padding: 0;
+    list-style-type: none;
+    gap: 24px;
 }
 
-.header {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header, .footer {
     flex-flow: row nowrap;
     justify-content: space-between;
+    background-color: #1F2937;
+    color:white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer{
+    justify-content: center;
+}
+
+.banner{
+    background-color: #1F2937;
+    color:white;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    gap: 24px;
+}
+.banner > *{
+    width: 50%;
+    align-items: start;
+    flex: 1 1 auto;
+}
+
+.infosection {
+    color: #1F2937;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.caption{
+    font-size: 18px;
+    text-align: center;
+}
+
+.infosection > * {
+    margin: 24px;
+}
+
+.imagewcap {
+    flex: 0 0 150px;
+}
+
+.imagewcap img{
+    border-radius: 8px;
+    border: 3px solid #3882F6;
+}
+
+.quote {
+    font-size:36px;
+    font-style: italic;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    align-items: center;
+}
+
+.quote * {
+    width: 70%;
+}
+
+.author {
+    margin: 12px;
+    font-size: 18px; 
+    font-weight: bold;
+    font-style: normal;
+    justify-content: end;
+}
+
+.callbox{
+    background-color: #3882F6;
+    color:#E5E7EB;
+    border-radius: 8px;
+    border-color: #E5E7EB;
+    padding: 24px;
+    margin: 96px;
+}
+
+.callbox * {
+    justify-content: start;
 }
 
 .columnbox{
     flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    background-color: #3882F6;
+    border-radius: 8px;
+    width:96px;
+    height:32px;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 body * {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     display:flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+body > div{
+    padding: 0 15%;
+    flex-grow: 0;
 }
