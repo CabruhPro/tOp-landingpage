@@ -1,3 +1,25 @@
 body {
-    font-family: ;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.columnbox{
+    flex-flow: column nowrap;
+}
+
+body * {
+    border: 2px solid red;
+    display:flex;
 }
